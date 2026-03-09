@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assinment</title>
+    <!-- tailwind and daisy cdn -->
+<link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+<body class="min-h-screen max-w-md bg-base-200 mx-auto">
+  
+<div class="bg-white w-[420px] rounded-xl shadow-lg p-8 text-center justify-between content-end">
+
+    <!-- Icon -->
+<div class="flex justify-center mb-4">
+  <div class="bg-gray-800 w-20 h-20 flex items-center justify-center rounded-full">
+   <img class="bg-amber-50 col-auto" src="./assets/github-logo.png" alt="">
+  </div>
+</div>
+
+    <!-- Title -->
+    <h2 class="text-2xl font-bold text-gray-800">GitHub Issues Tracker</h2>
+    <p class="text-gray-500 text-sm mb-6">Sign in to manage your issues</p>
+
+    <!-- Username -->
+    <div class="text-left mb-4">
+      <label class="text-sm text-gray-700">Username</label>
+      <input id="input-username"
+        type="text"
+        placeholder="Enter Username"
+        class="w-full mt-1 px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"
+      >
+      <p class="text-xs text-purple-600 mt-1">Default: admin</p>
+    </div>
+
+    <!-- Password -->
+    <div class="text-left mb-6">
+      <label class="text-sm text-gray-700">Password</label>
+      <input id="input-password"
+        type="password"
+        placeholder="Enter Password"
+        class="w-full mt-1 px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"
+      >
+      <p class="text-xs text-purple-600 mt-1">Default: admin123</p>
+    </div>
+
+    <!-- Button -->
+    <button id="login-btn" class="w-full bg-gradient-to-r from-purple-700 to-indigo-600 text-white py-2 rounded-lg font-semibold hover:opacity-90">
+      Sign In
+    </button>
+
+    <!-- OR -->
+    <div class="flex items-center my-6">
+      <div class="flex-grow border-t"></div>
+      <span class="px-3 text-gray-400 text-sm">OR</span>
+      <div class="flex-grow border-t"></div>
+    </div>
+
+    <!-- Demo Credentials -->
+    <div class="bg-gray-100 p-4 rounded-lg text-sm text-gray-700">
+      <p class="font-semibold">Demo Credentials:</p>
+      <p>Username: admin</p>
+      <p>Password: admin123</p>
+    </div>
+
+  </div>
+
+
+  <script src="./script/login.js"></script>
+
+</body>
+</html>
